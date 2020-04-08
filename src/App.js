@@ -28,9 +28,8 @@ function App() {
                     <Route path="/about">
                         <About/>
                     </Route>
-                    <Route path="/contact">
-                        <Contact/>
-                    </Route>
+                    <Route path="/contact/:name" component={Contact}/>
+                    <Route path="/contact" component={Contact}/>
                     <Route path="/">
                         <Main/>
                     </Route>

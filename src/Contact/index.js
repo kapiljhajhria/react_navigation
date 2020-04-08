@@ -8,7 +8,7 @@ export default class Contact extends React.Component {
     render() {
         return (
             <div className="ContactPage">
-                Contact Page
+                Contact {this.props.match.params.name}
             </div>
         );
     }
